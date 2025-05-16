@@ -28,7 +28,7 @@ if es.indices.exists(index=index_name):
 es.indices.create(index=index_name, body=mapping)
 
 # Index data
-with open("products.json") as f:
+with open("apniroots_products_partial.json") as f:
     products = json.load(f)
 
 for i, product in enumerate(products):
